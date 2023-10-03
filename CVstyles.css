@@ -1,0 +1,224 @@
+/*NAV BAR*/
+/* Style the navigation bar */
+.nav {
+  background-color: #772e25;
+  padding: 10px 0;
+}
+
+/* Style the list and remove list styles (e.g., bullets) */
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  padding-left: 120px;
+}
+
+/* Style the list items (navigation links) */
+.nav li {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 7px;
+}
+
+/* Style the links */
+.nav a {
+  text-decoration: none;
+  color: #f4eeee;
+  padding: 17px 20px;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for links */
+.nav a:hover {
+  background-color: #c44536;
+}
+
+.ButtonSections {
+  text-align: center;
+  padding: 10px;
+}
+
+.ButtonSections button {
+  background-color: #772e25;
+  color: #f4eeee;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.ButtonSections button a {
+  text-decoration: none;
+  color: #f4eeee;
+}
+
+.ButtonSections button:hover {
+  background-color: #c44536;
+}
+
+/*HEADER*/
+.title-name {
+  color: #0a2342;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  padding-top: 50px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 48px;
+}
+
+/*BODY*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4eeee;
+  font-family: "Encode Sans", sans-serif;
+}
+
+/*EDUCATION*/
+.Education {
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.Education-header {
+  color: #772e25;
+  font-size: x-large;
+}
+
+.Education2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.Education-item {
+  background-color: #80A1D4;
+  color: #f4eeee;
+  padding: 15px;
+  border-radius: 10px;
+  width: calc(
+    33.33% - 20px
+  ); /* Adjust the width as needed for responsiveness */
+  box-sizing: border-box;
+}
+
+.Education-item h4 {
+  margin: 0;
+  font-size: large;
+}
+
+.Education-item .education2 {
+  font-size: medium;
+}
+
+.school-title {
+  font-weight: bolder;
+}
+
+.Education-item ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Education-item ul li {
+  margin-left: 20px;
+}
+
+.Education-section2 {
+  display: flex; /* Display children in a row */
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  justify-content: space-between; /* Distribute space evenly between items */
+}
+
+.Education-section2 .Education-item {
+  width: calc(
+    48% - 10px
+  ); /* Adjust the width as needed to fit two items in a row */
+  margin-bottom: 20px; /* Adjust spacing between rows */
+  box-sizing: border-box;
+}
+
+/*WORK EXPERIENCE*/
+.WorkExperience {
+  color: #0a2342;
+  font-size: x-large;
+  margin: 2rem;
+  max-width: calc(100% - 80px);
+  padding-left: 20px;
+}
+
+.article-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 3rem;
+  padding-left: 20px;
+}
+
+.article-card {
+  background-color: white;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.article-image {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.article-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0 0;
+}
+
+.article-content {
+  padding: 2rem;
+}
+
+.article-content .card-description {
+  color: #80A1D4;
+  font-size: medium;
+}
+
+.article-content .card-title {
+  color: #0a2342;
+  font-size: large;
+}
+
+/*SKILLS*/
+.SkillsTitle {
+  color: #0a2342;
+  font-size: x-large;
+  padding-left: 60px;
+}
+
+.SkillsContainer {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+.ProgrammingSkills {
+  background-color: #80A1D4;
+  padding-top: 0px;
+  padding: 20px;
+  border-radius: 20px;
+  padding-right: 50px;
+  margin: 10px;
+}
+
+.SoftSkills {
+  background-color: #80A1D4;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+}

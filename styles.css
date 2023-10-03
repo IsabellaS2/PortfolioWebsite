@@ -1,0 +1,400 @@
+/*NAV BAR*/
+/* Style the navigation bar */
+.nav {
+  background-color: #772e25;
+  padding: 10px 0;
+}
+
+/* Style the list and remove list styles (e.g., bullets) */
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  padding-left: 120px;
+}
+
+/* Style the list items (navigation links) */
+.nav li {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 7px;
+}
+
+/* Style the links */
+.nav a {
+  text-decoration: none;
+  color: #f4eeee;
+  padding: 17px 20px;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for links */
+.nav a:hover {
+  background-color: #c44536;
+}
+
+/* font-family: 'Cormorant Garamond', serif;
+font-family: 'Roboto Mono', monospace; 
+  font-family: 'Encode Sans', sans-serif;
+*/
+
+/*BODY*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4eeee;
+  font-family: "Encode Sans", sans-serif;
+}
+
+/*title and description and image*/
+/*HEADER Isabella Sulisufi*/
+.title-name {
+  color: #0a2342;
+  text-align: left;
+  font-size: 2rem;
+  margin: 0;
+  padding-top: 50px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 48px;
+}
+
+/*Software Developer Apprentice*/
+.my-title {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 40px;
+  padding-top: 10px;
+  word-wrap: break-word;
+}
+
+.job-title {
+  color: #772e25;
+}
+
+.company-name {
+  color: #0a2342;
+}
+
+/* Style the title description */
+.title-description {
+  padding-top: 20px;
+  width: 70%;
+  color: #0a2342;
+  font-size: 25px;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/* Container to hold the image and content */
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+/* Style the content container */
+.content-container {
+  flex: 1;
+}
+
+/* Align the top of the image with the top of the h1 and the bottom with the bottom of the description */
+.profileimage-container {
+  flex: 0 0 auto;
+  margin-left: 20px;
+}
+
+.rounded-image {
+  border-radius: 354px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  width: 354px;
+  height: 400;
+  margin-top: 50px;
+}
+
+/* Style the logo row container */
+.logo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 170px 10px 150px;
+}
+
+/* Style each logo image */
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 1200px) {
+  .logo-row {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  /* Adjust logo size for smaller screens */
+  .logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+/*ARTICLE CARDS*/
+.site-container {
+  max-width: calc(100% - 80px);
+  margin: 2rem auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.article-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.article-image {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.article-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0 0;
+}
+
+.article-card {
+  background-color: white;
+  border-radius: 20px;
+  transition: 0.3s;
+  border: 4px solid #0a2342;
+}
+
+.article-card:hover {
+  box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.2);
+  cursor: pointer;
+}
+
+.article-content {
+  padding: 2rem;
+}
+
+.article-card .card-category {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: #c44536;
+  display: block;
+  text-decoration: none;
+}
+
+.article-content .card-title {
+  margin: 1rem 0;
+  color: #0a2342;
+  text-align: center;
+  border: 10px;
+}
+
+/*CONTACT SECTION*/
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+.left-section {
+  flex: 1;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-section h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-image {
+  width: 80%;
+  height: 60%;
+}
+
+.email-button,
+.phone-button {
+  display: block;
+  width: 40%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #80a1d4;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.email-button a,
+.phone-button a {
+  text-decoration: none; /* Remove underlines */
+}
+
+.email-button:hover,
+.phone-button:hover {
+  background-color: #80a1d4;
+}
+
+/* Style the LinkedIn button */
+.linkedin-icon {
+  padding-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.right-section {
+  flex: 1;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.right-section h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.linkedin-button,
+.github-button {
+  display: block;
+  text-decoration: none;
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin: 10px;
+  background-color: #80a1d4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.linkedin-button:hover,
+.github-button:hover {
+  background-color: #0a2342;
+}
+
+.contact-form {
+  background-color: #fff8f0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.contact-form h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #fff8f0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #80a1d4;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0a2342;
+}
+
+/*About Section*/
+/* Apply padding to the sides of the page */
+.header-container,
+.about-container {
+  padding: 0 150px;
+}
+
+/* Style the about section */
+.about-container {
+  background-color: #f4eeee;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.about-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-section {
+  width: 23%; /* Adjust as needed for spacing */
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-title {
+  color: #0a2342;
+  font-size: 1.5rem;
+}
+
+.about-description {
+  color: #0a2342;
+  font-size: 1rem;
+}
+
+.about-section .computer-image {
+  padding-top: 15px;
+  max-width: 100%;
+  height: 150px; /* Adjust the desired fixed height */
+}
+
+/* Style the images */
+.about-section img {
+  padding-top: 15px;
+  max-width: 100%;
+  height: 200px; /* Adjust the desired fixed height */
+}
+
